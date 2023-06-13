@@ -1,0 +1,48 @@
+Ejercicio 1 - YouTube
+Trataremos de hacer un modelo sencillo de cómo sería la base de datos para una versión reducida de YouTube.
+
+De cada usuario/a guardamos un identificador único:
+Email.
+Password.
+Nombre de usuario/a.
+Fecha de nacimiento.
+Sexo.
+País.
+Código postal.
+
+
+Un usuario/a publica vídeos. De cada vídeo guardamos un identificador único:
+Un título.
+Una descripción.
+Un tamaño.
+El nombre del archivo de vídeo.
+Duración del vídeo.
+Un thumbnail.
+El número de reproducciones.
+El número de likes.
+El número de dislikes.
+
+Un vídeo puede tener tres estados distintos: público, oculto y privado. Un vídeo puede tener muchas etiquetas. Una etiqueta se identifica por un identificador único y un nombre de etiqueta. Interesa guardar quién es el usuario/a que publica el vídeo y en qué fecha/hora lo hace.
+
+
+Un usuario puede crear un canal. Un canal tiene un identificador único:
+Un nombre.
+Una descripción.
+Una fecha de creación.
+
+
+Un usuario/a puede suscribirse a los canales de otros usuarios/as. Un usuario puede darle un like o un dislike a un vídeo una única vez. Habrá que llevar un registro de los usuarios/as que le han dado like y dislike a un determinado vídeo y en qué fecha/hora lo hicieron.
+
+
+Un usuario puede crear playlists con los vídeos que le gustan. Cada playlist tiene un identificador único:
+Un nombre.
+Una fecha de creación.
+Un estado que indica que puede ser pública o privada.
+
+
+Un usuario puede escribir comentarios en un vídeo determinado. Cada comentario está identificado por un identificador único:
+El texto del comentario.
+La fecha/hora en la que se realizó.
+
+
+Un usuario puede marcar un comentario como me gusta o no me gusta. Habrá que llevar un registro de los usuarios/as que han marcado un comentario cómo me gusta/no me gusta, y en qué fecha/hora lo hicieron.
